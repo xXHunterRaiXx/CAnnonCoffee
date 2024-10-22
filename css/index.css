@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --black: #000000;
+  --catalina: #06327d;
+  --bluetiful: #2b70e4;
+  --vegan: #209d5c;
+  --sunglow: #ffd034;
+  --white: #ffffff;
+  --lightblue: #cadbf8;
+  --mainfont: "Poppins", sans-serif;
+}
+.logo {
+  display: flex;
+  flex-flow: row-wrap;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero {
+  background: var(--white);
+}
+
+.hero h1 {
+  grid-column: 2/3;
+  padding-left: 2rem;
+  font-weight: normal;
+}
+
+.hero img {
+  grid-column: 1/2;
+  max-width: 100%;
+  grid-row: 1/4;
+  padding: 1rem;
+}
+
+.hero p {
+  padding-left: 2rem;
+}
+.main {
+  background-color: #cadbf7;
+}
+.button {
+  background-color: var(--vegan);
+  text-decoration: none;
+  color: var(--white);
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+}
+
+header {
+  background: var(--catalina);
+  border-bottom: var(--sunglow) solid 0.5rem;
+}
+header h1 {
+  color: var(--white);
+  font-weight: normal;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: -1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+body {
+  font-family: var(--mainfont);
+  font-size: 1.125rem;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 1000px) {
+  nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+  }
+
+  nav ul {
+    margin: 0;
+    padding-top: 2.7rem;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+footer {
+  background-color: var(--catalina);
+  color: var(--white);
+  text-align: center;
+  padding-bottom: 1rem;
+  border-top: var(--sunglow) 0.5rem solid;
+}
+@media (min-width: 650px) {
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+@media (min-width: 1000px) {
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+  }
+}
