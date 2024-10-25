@@ -10,17 +10,46 @@
   --lightblue: #cadbf8;
   --mainfont: "Poppins", sans-serif;
 }
+body {
+  font-family: var(--mainfont);
+  font-size: 1.125rem;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background: var(--catalina);
+}
 .logo {
   display: flex;
   flex-flow: row-wrap;
 }
-
+img {
+  max-width: 100%;
+}
+.menu {
+  max-width: 100%;
+  padding: 2rem;
+}
+.top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
 .top-nav {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
 
+.grid-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu img {
+  border-radius: 40px;
+}
 .hero {
   background: var(--white);
 }
@@ -35,7 +64,6 @@
   grid-column: 1/2;
   max-width: 100%;
   grid-row: 1/4;
-  padding: 1rem;
 }
 
 .hero p {
@@ -72,14 +100,6 @@ nav ul {
 nav a {
   text-decoration: none;
   color: var(--white);
-}
-
-body {
-  font-family: var(--mainfont);
-  font-size: 1.125rem;
-  line-height: 1.5;
-  padding: 0;
-  margin: 0;
 }
 
 @media (min-width: 1000px) {
