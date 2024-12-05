@@ -18,6 +18,10 @@ body {
   margin: 0;
   background: var(--catalina);
 }
+svg {
+  width: 20px;
+  height: 20px;
+}
 .grid-container {
   max-width: 1200px;
   margin-left: auto;
